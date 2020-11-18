@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <Layout>
     Social
-  </div>
+  </Layout>
 </template>
 
 <script>

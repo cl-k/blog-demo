@@ -191,7 +191,9 @@
           <sidebar></sidebar>
         </el-col>
         <el-col :span="18" style="padding-left:10px">
-          <app-main></app-main>
+          <app-main>
+            <slot />
+          </app-main>
         </el-col>
       </el-row>
     </section>
@@ -227,7 +229,6 @@ import Sidebar from './components/Sidebar'
 
 export default {
   name: 'DefaultLayout',
-  // components: { Footer, Header, Sidebar },
   components: { AppMain, Sidebar, Foot },
   computed: {
     config() {

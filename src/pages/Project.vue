@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <Layout>
     Project
-  </div>
+  </Layout>
 </template>
 
 <script>
