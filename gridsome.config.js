@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Blog',
   plugins: [
     {
       use: '@gridsome/source-strapi',
@@ -28,6 +28,12 @@ module.exports = {
       {
         path: '/blog-detail/:id',
         component: './src/templates/BlogDetail.vue'
+      }
+    ],
+    project: [
+      {
+        path: '/project-detail/:id',
+        component: './src/templates/ProjectDetail.vue'
       }
     ]
   }
